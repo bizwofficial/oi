@@ -11,13 +11,14 @@ void merge(int p, int q, int r) {
     for (int i(0); i < n; i++)
         right[i] = A[q+1+i];                    //right = A[q+1..r]
     left[m] = LLONG_MAX;
-    right[m] = LLONG_MAX;
+    right[n] = LLONG_MAX;
     int i(0), j(0);
-    for (int k(p); k <= r; k++)
+    for (int k(p); k <= r; k++){
         if (left[i] < right[j])
             A[k] = left[i++];
         else
             A[k] = right[j++];
+    }
     return;
 }
 
