@@ -1,18 +1,17 @@
 #include<iostream>
 #include<cstring>
-#include<sstream>
 
 int main() {
     using namespace std;
-    int m, n, current_num;
-    string nn;
-    cin >> m >> nn;
-    for (int i = 0; i < nn.length(); i++) {
-        if (nn.at(i) != '0') {
-            cout << nn.at(i) << "*" << m << "^" <<nn.length()-i-1;
-            if (i != nn.length()-1) {
+    int m;
+    string n;
+    cin >> m >> n;
+    for (int i = 0; i < n.length(); i++) {
+        if (n.at(i) != '0') {
+            if (i != 0) {
                 cout << "+";
             }
+            cout << n.at(i) << "*" << m << "^" <<n.length()-i-1;
         }
     }
     return 0;
