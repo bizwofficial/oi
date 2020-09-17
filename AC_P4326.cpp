@@ -1,7 +1,7 @@
 #include<iostream>
 #include<iomanip>
 
-const double PI = 3.1415926;
+const double PI = 3.14159265358979323846264;
 
 int main() {
 	using namespace std;
