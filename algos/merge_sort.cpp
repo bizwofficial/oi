@@ -1,5 +1,5 @@
-#include<iostream>
-#include<climits>
+#include<bits/stdc++.h>
+//refactor Introduction to Algorithms, Third Edition, p.30, MERGE and p.33, MERGE-SORT
 
 long long A[10000];
 
