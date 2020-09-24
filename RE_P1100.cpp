@@ -23,7 +23,7 @@ void bin_to_dec (short a[], unsigned &dec) {
 
 void exchange_bits(short (&a)[32]) {
     short left[16];
-    for (int i(0); i < 12; ++i) {
+    for (int i(0); i < 16; ++i) {
         left[i] = a[i];
     }
     for (int i(16); i < 32; ++i) {
