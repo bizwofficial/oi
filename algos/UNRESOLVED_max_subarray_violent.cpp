@@ -37,6 +37,6 @@ int main() {
     Result r = find_max_subarray(n, A);
     cout << "Start Location: " << r.start << endl
          << "End Location: " << r.end << endl
-         << "Sum+ " << r.max_sum << endl;
+         << "Sum: " << r.max_sum << endl;
     return 0;
 }
